@@ -15,7 +15,7 @@ class BehaviorLog(models.Model):
 
 class Goal(models.Model):
     user_profile = models.ForeignKey(UserProfile, on_delete = models.CASCADE)
-    goal_descritpion = models.TextField()
+    goal_description = models.TextField()
     target_date = models.DateTimeField()
     achieved = models.BooleanField(default = False)
 
